@@ -1,0 +1,26 @@
+{
+  "name": "bookstore",
+  "authors": [
+    "Karol Janowski <karol.janowski22@gmail.com>"
+  ],
+  "description": "bookstore ecommerce",
+  "main": "",
+  "keywords": [
+    "bookstore"
+  ],
+  "license": "MIT",
+  "homepage": "karoljanowski.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tinymce": "^4.6.4",
+    "components-font-awesome": "^4.7.0",
+    "datatables.net": "^1.10.15",
+    "datatables.net-dt": "^3.2.2"
+  }
+}
