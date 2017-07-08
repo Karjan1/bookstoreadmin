@@ -19,7 +19,7 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
     @Autowired
     private Environment env;
@@ -46,6 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             "/signup",
             "/myAccount",
             "/newUser",
+            "/usr/local/opt/bookstoreadmin/*",
             "/forgetPassword",
             "/login",
     };
@@ -70,6 +71,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userSecurityService).passwordEncoder(passwordEncoder());
     }
+
+
 }
 
 
