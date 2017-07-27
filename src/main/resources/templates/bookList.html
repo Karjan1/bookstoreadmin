@@ -27,7 +27,7 @@
                 <td th:text="${book.listPrice}"></td>
                 <td th:text="${book.ourPrice}"></td>
                 <td th:text="${book.active}"></td>
-                <td>delete</td>
+                <td><a th:href="@{/book/delete?id=}+${book.id}">delete</a></td>
             </tr>
             </tbody>
         </table>
